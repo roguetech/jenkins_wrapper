@@ -6,6 +6,8 @@
 
 Chef::Log.debug('Running')
 
+include_recipe 'java'
+
 name "java"
 description "Install Oracle Java"
 default_attributes(
