@@ -1,6 +1,6 @@
 name 'jenkins_wrapper'
 maintainer 'Patrick Roughan'
-maintainer_email 'patick.roughan@roguetechnology.org
+maintainer_email 'patick.roughan@roguetechnology.org'
 license 'all_rights'
 description 'Installs/Configures pcp_jenkins'
 long_description 'Installs/Configures pcp_jenkins'
