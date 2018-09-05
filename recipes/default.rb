@@ -6,7 +6,7 @@
 
 Chef::Log.debug('Running')
 
-include_recipe 'java::default'
-include_recipe 'jenkins::default'
+include_recipe 'java'
+include_recipe 'jenkins::master'
 
 Chef::Log.debug('Done')
