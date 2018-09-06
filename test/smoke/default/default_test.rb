@@ -17,6 +17,6 @@ describe port(80) do
   skip 'This is an example test, replace with your own test.'
 end
 
-describe command 'java --version' do
-  its(:stdout) { should contain(1.8) }
+describe package 'java' do
+  it { should  be_installed }
 end
