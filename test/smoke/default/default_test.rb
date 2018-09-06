@@ -21,7 +21,10 @@ end
 #  it { should  be_installed }#
 #  its('version') { should match(java_version) }
 #end
+describe command('java').exist? do
+  it { should eq true }
+end
 
 describe command ('java -version') do
-  its('stdout') { should eq '/1\.8\.0/' }
+  its('stdout') { should eq '/1.8.0/' }
 end
