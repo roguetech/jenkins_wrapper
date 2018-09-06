@@ -6,6 +6,6 @@
 
 Chef::Log.debug('Running')
 
-include_recipe 'java'
+#include_recipe 'java'
 
 Chef::Log.debug('Done')
