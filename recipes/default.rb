@@ -6,6 +6,6 @@
 
 Chef::Log.debug('Running')
 
-include_recipe 'java_install'
+include_recipe 'jenkins_wrapper::java_install'
 
 Chef::Log.debug('Done')
