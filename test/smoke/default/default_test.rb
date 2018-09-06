@@ -25,6 +25,6 @@ describe command('java').exist? do
   it { should eq true }
 end
 
-describe command ('java -version') do
-  its('stdout') { should eq '/1.8.0/' }
+describe package ('java') do
+  it { should be_installed }
 end
