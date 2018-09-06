@@ -1,3 +1,3 @@
-default['jenkins_wrapper']['jdk_version'] = '8'
-default['jenkins_wrapper']['install_flavor'] = 'oracle'
-default['jenkins_wrapper']['oracle']['accept_oracle_download_terms'] = true
+default['java']['jdk_version'] = '8'
+default['java']['install_flavor'] = 'oracle'
+default['java']['oracle']['accept_oracle_download_terms'] = true
