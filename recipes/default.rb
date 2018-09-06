@@ -6,6 +6,6 @@
 
 Chef::Log.debug('Running')
 
-#include_recipe 'java'
+include_recipe 'java_install'
 
 Chef::Log.debug('Done')
