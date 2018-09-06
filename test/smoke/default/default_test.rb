@@ -17,6 +17,7 @@ describe port(80) do
   skip 'This is an example test, replace with your own test.'
 end
 
-describe package 'java' do
+describe package 'default-jdk' do
   it { should  be_installed }
+  its('version') { should match(java_version) }
 end
