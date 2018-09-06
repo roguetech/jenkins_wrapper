@@ -22,6 +22,6 @@ end
 #  its('version') { should match(java_version) }
 #end
 
-describe command ('java --version') do
+describe command ('java -version') do
   its('stdout') { should match /1.8.0/ }
 end
