@@ -25,6 +25,13 @@ describe command('java').exist? do
   it { should eq true }
 end
 
-describe package ('java') do
-  it { should be_installed }
+#describe package ('java') do
+#  it { should be_installed }
+#end
+
+describe command('which java') do                  # The actual test
+    its('stdout') { should match /bin/ }
+    its('stderr') { should eq '' }
+    its('exit_status') { should eq 0 }
+  end
 end
