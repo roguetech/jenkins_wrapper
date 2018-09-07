@@ -16,7 +16,7 @@ verifier:
   name: inspec
 
 platforms:
-  - name: centos-7.5
+  - name: centos-7
 
 suites:
   - name: default
