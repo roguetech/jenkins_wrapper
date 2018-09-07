@@ -1,6 +1,6 @@
 ---
 driver:
-  name: docker
+  name: dokken
 
 provisioner:
   name: chef_zero
@@ -8,6 +8,9 @@ provisioner:
   # For example:
   #   always_update_cookbooks: <%= !ENV['CI'] %>
   always_update_cookbooks: true
+
+transport:
+  name: dokken
 
 verifier:
   name: inspec
