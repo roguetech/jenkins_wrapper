@@ -29,9 +29,9 @@ end
 #  it { should be_installed }
 #end
 
-describe command('which java') do                  # The actual test
-    its('stdout') { should match /bin/ }
-    its('stderr') { should eq '' }
-    its('exit_status') { should eq 0 }
-  end
-end
+#describe command('which java') do                  # The actual test
+#    its('stdout') { should match /bin/ }
+#    its('stderr') { should eq '' }
+#    its('exit_status') { should eq 0 }
+#  end
+#end
