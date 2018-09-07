@@ -35,3 +35,9 @@ end
 #    its('exit_status') { should eq 0 }
 #  end
 #end
+
+def bar(flavor: 'openjdk', version: '1.8.0')
+  describe package("java-#{version}-#{flavor}") do
+    it { is_expected.to be_installed }
+  end
+end
